@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design system - SaturnCSS®.</title>
+    <link rel="stylesheet" href="../saturn.css" />
+    <link rel="stylesheet" href="../src/custom.css" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../src/assets/icons/icon.ico" />
+</head>
+<body>
+<header class="my-6 text-center">
+    <img src="../src/assets/icons/icon.ico" alt="SaturnCSS Logo" />
+    <h1>SaturnCSS® <br/>Design system</h1>
+</header>
+<ul class="nav d-flex gap-2 font-6 p-absolute">
+    <li class="dark-text"><a href="../index-en.html">Documentation</a></li>
+</ul>
+<button id="toggleButton" class="p-fixed"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></button>
+<main class="container design-system">
+    <section id="text-examples">
+        <h2>Texts</h2>
+        <h3>Paragraph</h3>
+        <p>Lorem ipsum dolor sit <span>span</span> amet consectetur adipisicing elit. Quae <a href="#">link</a> dolorem dolorum quisquam repellat consectetur molestias quos sint sit at rerum pariatur <em>italic</em> reiciendis sequi suscipit et, <strong>strong</strong> ratione fugiat accusamus fuga.</p>
+        <h3>Alt. paragraph</h3>
+        <p class="text-alt">Lorem ipsum dolor sit <span>span</span> amet consectetur adipisicing elit. Quae <a href="#">link</a> dolorem dolorum quisquam repellat consectetur molestias quos sint sit at rerum pariatur <em>italic</em> reiciendis sequi suscipit et, <strong>strong</strong> ratione fugiat accusamus fuga.</p>
+        <h3>Inlined texts</h3>
+        <p class="mb-2">This is a <a href="#">link</a> within a paragraph.</p>
+        <p class="mb-2">This is a <strong>strong</strong> within a paragraph.</p>
+        <p class="mb-2">This is a <em>italicized</em> within paragraph.</p>
+        <p class="mb-2">This is a <span>span</span> within a paragraph.</p>
+    </section>
+    <section id="button-examples">
+        <h2>Buttons</h2>
+        <h3>Primary Button</h3>
+        <button class="btn">Primary Button</button>
+        <h3>Secondary Button</h3>
+        <button class="btn btn-secondary">Secondary Button</button>
+    </section>
+    <section id="form-examples">
+        <h2>Forms</h2>
+        <form>
+            <fieldset class="form-example">
+                <h3>Text Input</h3>
+                <label for="text-input">Label :</label>
+                <input type="text" class="text" id="text-input" name="text-input" />
+            </fieldset>
+            <fieldset class="form-example">
+                <h3>Password Input</h3>
+                <label for="password-input">Label :</label>
+                <input type="password" id="password-input" name="password-input" />
+            </fieldset>
+            <fieldset class="form-example">
+                <h3>Checkbox</h3>
+                <label><input type="checkbox" name="checkbox" /> Label</label>
+            </fieldset>
+            <fieldset class="form-example">
+                <h3>Radio Button</h3>
+                <label><input type="radio" name="radio" /> Label</label>
+                <label><input type="radio" name="radio" /> Label</label>
+            </fieldset>
+        </form>
+    </section>
+    <section id="card-examples">
+        <h2>Cards</h2>
+        <article class="card">
+            <h4>Card Title</h4>
+            <p>This is the content of the card.</p>
+        </article>
+    </section>
+    <section id="list-examples">
+        <h2>Lists</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </section>
+    <section id="chips">
+        <h2>Chips</h2>
+        <h3>Chip</h3>
+        <span>my chip</span>
+        <h3>Alt. Chip</h3>
+        <span>My alt chip</span>
+    </section>
+    <section id="your-own-examples">
+        <h2>Your own design pattern</h2>
+        <h3>Your html here</h3>
+    </section>
+</main>
+</body>
+</html>

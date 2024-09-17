@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Library Documentation - SaturnCSS®.</title>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    />
+    <link rel="stylesheet" href="saturn.css" />
+    <link rel="stylesheet" href="src/custom.css" />
+    <link rel="icon" type="image/x-icon" href="src/assets/icons/icon.ico" />
+    <script defer src="./src/footer.js"></script>
+</head>
+<body>
+<ul class="nav d-flex gap-2 font-6 p-absolute">
+    <li class="dark-text"><a href="index-fr.html">FR 🇫🇷</a></li>
+    <li class="dark-text"><a href="design-system/design-system.html">| Design System</a></li>
+</ul>
+<div class="container">
+    <header class="my-6 text-center">
+        <img src="src/assets/icons/icon.ico" alt="SaturnCSS Logo" />
+        <h1>SaturnCSS® <br/>Documentation</h1>
+    </header>
+
+    <div class="section">
+        <h2 class="mb-4 text-5">Installation:</h2>
+        <p class="mb-2 line-5">
+            To start using the CSS library, you need to install the dependency via npm: <br/>
+            (The library is compatible only with Angular and React.jsx).
+        </p>
+        <div class="code">
+            <span class="terminal-first-color">npm</span> install saturn-css
+        </div>
+        <p class="mb-2 line-5">
+            Then you need to run the command that executes the script and installs the absolute paths to the library:
+        </p>
+        <div class="code">
+            <span class="terminal-first-color">npm</span> run saturn
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="text-5 mb-4">Basic Structure:</h2>
+        <p class="mb-2 line-5">
+            The library uses classes to style HTML elements. Here are some basic
+            classes you can use:
+        </p>
+        <ul class="subsection code p-4 line-5">
+            <li>
+                <strong class="css-property">Text-align:</strong> .text-center, .text-left, .text-right,
+                .text-justify
+            </li>
+            <li><strong class="css-property">Font-size:</strong> .text-1 to .text-12.</li>
+            <li><strong class="css-property">Line-height:</strong> .line-1 to .line-12</li>
+            <li><strong class="css-property">Font-weight:</strong> .font-1 to .font-9.</li>
+            <li>
+                <strong class="css-property">Text-transform:</strong> .text-uppercase, .text-lowercase,
+                .text-capitalize.
+            </li>
+            <li><strong class="css-property">Displays:</strong> .d-block, .d-inline, .d-none, etc.</li>
+            <li>
+                <strong class="css-property">Margins/paddings:</strong> .m-, .mt-, .mr-, .mb-, .ml-,
+                .my-, .mx-, .p-, .pt-, .pr-, .pb-, .pl-, .py-, .px-.
+            </li>
+            <li>
+                <strong class="css-property">Positions:</strong> .p-relative, .p-absolute, .p-fixed,
+                .p-static, .p-sticky
+            </li>
+            <li>
+                <strong class="css-property">Border:</strong> .bordered (Applies a 1px black border.)
+            </li>
+            <li>
+                <strong class="css-property">Text-transform: </strong>.text-uppercase, .text-lowercase,
+                .text-capitalize
+            </li>
+            <li>
+                <strong class="css-property">Vertical-align: </strong>.vertical-middle,
+                .vertical-baseline, .vertical-bottom, etc...
+            </li>
+            <li>
+                <strong class="css-property">clamp-text: </strong>Restricts text to a maximum of 4
+                lines.<br />Add the clamp-text class to specify the number of lines.
+                Example for one line: clamp-text clamp-text-1
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="text-5 mb-4">Border-radius:</h2>
+        <p class="line-5 mb-2">
+            To round the corners of elements, use the following classes:
+        </p>
+        <ul class="subsection code">
+            <li>
+                <strong class="css-property">.rounded :</strong> Applies a border-radius of 50% to create
+                a circle.
+            </li>
+            <li><strong class="css-property">.radius-none :</strong> Removes the border-radius.</li>
+            <li>
+                <strong class="css-property">.radius-1 to .radius-12 :</strong> Sets the border-radius to
+                different values.
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="text-5 mb-4">Flex:</h2>
+        <p class="line-5 mb-2">
+            Flex classes control the alignment and positioning of elements:
+        </p>
+        <ul class="subsection code">
+            <li>
+                <strong class="css-property">Horizontal Alignment:</strong> .align-center,
+                .align-baseline, etc..
+            </li>
+            <li>
+                <strong class="css-property">Vertical Alignment:</strong> .justify-center,
+                .justify-between, etc..
+            </li>
+            <li><strong class="css-property">Directions:</strong> .flex-row, .flex-column, etc..</li>
+            <li>
+                <strong class="css-property">Flex Wrap:</strong> .flex-wrap, .flex-nowrap,
+                .flex-wrap-reverse
+            </li>
+            <li><strong class="css-property">Gaps:</strong> .gap-1 to .gap-12.</li>
+            <li>
+                <strong class="css-property">Align Items:</strong> .align-start, .align-end,
+                .align-center, etc..
+            </li>
+            <li>
+                <strong class="css-property">Align Self:</strong> .align-self-start, .align-self-end,
+                .align-self-center, etc..
+            </li>
+            <li>
+                <strong class="css-property">Align Content:</strong> .content-start, .content-end,
+                .content-center, etc..
+            </li>
+            <li>
+                <strong class="css-property">Justify Content:</strong> .justify-start, .justify-end,
+                .justify-center, etc..
+            </li>
+            <li>
+                <strong class="css-property">Justify Self:</strong> .justify-self-start,
+                .justify-self-end, .justify-self-center, etc..
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="text-5 mb-4">Customization:</h2>
+        <p class="mb-2 line-5">
+            You can also customize the library by adding your own styles or
+            replacing default values of CSS variables. Some features, such as the
+            scrollbar or grid system, are customizable.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="text-5 mb-4">Usage Examples:</h2>
+        <p class="mb-4 line-5">Here are some usage examples:</p>
+
+        <div class="subsection">
+            <h4 class="mb-2">
+                Center text, change font, and apply margins and padding:
+            </h4>
+            <div class="code">
+                &lt;<span class="tag">p</span> <span class="attr">class</span>=<span class="attr-value">"text-center text-6 font-6 line-4 px-6 pt-2 mb-4"</span>&gt;
+                Content &lt;/<span class="tag">p</span>&gt;
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h4 class="mb-2">Create a simple and responsive grid:</h4>
+            <div class="code">
+                &lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="attr-value">"container"</span>&gt;<br />
+                <span class="tab"></span>&lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="attr-value">"d-flex gap-4"</span>&gt;<br />
+                <span class="tab"></span><span class="tab"></span>&lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="attr-value">"col-6"</span>&gt;Content 1&lt;/<span class="tag">div</span>&gt;<br />
+                <span class="tab"></span><span class="tab"></span>&lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="attr-value">"col-6"</span>&gt;Content 2&lt;/<span class="tag">div</span>&gt;<br />
+                <span class="tab"></span>&lt;/<span class="tag">div</span>&gt;<br />
+                &lt;/<span class="tag">div</span>&gt;
+            </div>
+        </div>
+    </div>
+    <div class="row gap-4 text-center mb-8">
+        <div class="col-6 column">
+            <h2 class="mb-4">Column 1</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga modi
+                voluptates debitis totam ad ex in, inventore ducimus!
+            </p>
+        </div>
+        <div class="col-6 column">
+            <h2 class="mb-4">Column 2</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga modi
+                voluptates debitis totam ad ex in, inventore ducimus!
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<footer id="footer"></footer>
+</html>
